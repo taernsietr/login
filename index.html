@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>страница входа</title>
+    <style>
+
+        body {
+            height: 98vh;
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+
+        .centered {
+            display: grid;
+            place-items: center;
+        }
+
+        .rounded-border {
+            border: 5px solid orange;
+            border-radius: 15px;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .margin {
+            margin: 20px;
+        }
+
+        .bottom-margin {
+            margin-bottom: 40px;
+        }
+
+        .orange-text {
+            color: orange;
+        }
+        
+        .black-bg {
+            background-color: black;
+        }
+
+        .submit-button {
+            width: 200px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="rounded-border padding">
+        <form class="centered padding orange-text" action="Test.do" method="POST">
+            <label for="username">USERNAME</label>
+            <input class="rounded-border orange-text black-bg bottom-margin" name="username" type="text" autofocus required />
+            <br />
+                <label for="passwd">PASSWORD</label>
+            <input class="rounded-border orange-text black-bg bottom-margin" name="passwd" type="password" required />
+            <br />
+            <input class="rounded-border margin orange-text black-bg submit-button" type="submit" value="LOGIN" />
+        </form>
+     </div>
+</body>
+
+</html>
