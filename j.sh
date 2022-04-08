@@ -5,6 +5,8 @@ SOURCE_FOLDER="src/main/java"
 CLASS_FOLDER="WEB-INF/classes"
 TOMCAT_LIBS=$PROJECT_FOLDER/$SOURCE_FOLDER/*":/usr/share/tomcat10/lib/*"
 
+echo "Beginning script..."
+
 # Check source folder
 if [[ -e $PROJECT_FOLDER/$SOURCE_FOLDER/*.class ]]; then
     echo "Class files present in source directory, removing..."
